@@ -13,7 +13,7 @@ sec_to_hms(secs)
 A character vector of formatted seconds
 }
 \description{
-This function converts a number of seconds to a character format hh:m:ss
+This function converts a number of seconds to a character format hh:mm:ss
 }
 \examples{
 sec_to_hms(c(8, 66))
