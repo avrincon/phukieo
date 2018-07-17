@@ -16,6 +16,7 @@ Functions that are usefull when calculating the CSI:
 
 - obs_time_calculator()
 - obs_time_matrix()
+- dyad_obs_total()
 - freq_matrix()
 - transp_sum_matrix()
 - sum_duration()
