@@ -7,8 +7,6 @@
 #' @return Returns the focal data with an added "check" column. Look for "check next"
 #' which indicates where there two consecutive start or end codes.
 #' @export
-#'
-#' @examples
 #' @import dplyr
 
 check_missing_start_end <- function(x, start_codes = "sg", end_codes = "eg") {

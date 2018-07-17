@@ -1,9 +1,9 @@
 Package: phukieo
-Title: What the Package Does (one line, title case)
+Title: Manipulate Behavioural Data
 Version: 0.0.0.9000
 Authors@R: person("Alan", "Rincon", email = "avrincon1@gmail.com", 
     role = c("aut", "cre"))
-Description: Helper functions for data collected at the Phu Kieo field site in Thailand
+Description: Helper functions for data collected at the Phu Kieo field site in Thailand.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

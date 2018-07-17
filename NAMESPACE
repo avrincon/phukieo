@@ -2,7 +2,13 @@
 
 export(ap_sb_gr_duration_calculator)
 export(check_missing_start_end)
+export(dur_matrix)
 export(duration_calculator)
+export(freq_matrix)
+export(obs_time_calculator)
+export(obs_time_matrix)
 export(prot_oos_duration_calculator)
 export(sec_to_hms)
+export(sum_duration)
+export(transp_sum_matrix)
 import(dplyr)
