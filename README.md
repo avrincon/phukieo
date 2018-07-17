@@ -22,3 +22,4 @@ Functions that are usefull when calculating the CSI:
 - transp_sum_matrix()
 - sum_duration()
 - dur_matrix()
+- sum_hms()
