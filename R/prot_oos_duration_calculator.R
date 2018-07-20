@@ -15,8 +15,6 @@
 #' @export
 #' @import dplyr
 #'
-#' @examples
-#'
 
 prot_oos_duration_calculator <- function(d_focal,
                                          start_codes, end_codes,
@@ -38,9 +36,8 @@ prot_oos_duration_calculator <- function(d_focal,
 
     if(nrow(dyad.info) > 0 & nrow(dyad.info) %% 2 != 0){
       # error message when dyad does not have equal number of start and end codes
-      stop(
-        paste("Number of 'start' codes is NOT equal to the number of 'end' codes.",
-              "Focal =", d.f, ":" ,"Partner =", d.p))
+      stop("Number of 'start' codes is NOT equal to the number of 'end' codes.",
+              "Focal =", d.f)
 
     } else if (nrow(dyad.info) != 0) {
       # calculate action duration, format to hh:mm:ss

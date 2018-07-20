@@ -27,6 +27,3 @@ adds two columns to d_focal. One with the total duration in seconds
 \description{
 Written specifically for focal protocol duration and out of sight time.
 }
-\examples{
-
-}
