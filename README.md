@@ -23,3 +23,19 @@ Functions that are usefull when calculating the CSI:
 - sum_duration()
 - dur_matrix()
 - sum_hms()
+
+### highlight si/ei of da/pa
+Functions that are useful to calculate da/pa interaction chunks
+
+- check_da_ei()
+- add_trackers()
+- highlight_sibc()
+- highlight_si()
+- highlight_si_rev()
+- map_nest()
+
+### classify da_pa_ids
+- classify_da_id()
+_helper functions:_
+- class_da_id()
+- class_agg_action_intensity()
