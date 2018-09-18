@@ -4,7 +4,8 @@
 \alias{duration_calculator}
 \title{Calculate the duration of a behaviour}
 \usage{
-duration_calculator(d_focal, start_codes, end_codes, focals, partners = NULL)
+duration_calculator(d_focal, start_codes, end_codes, focals,
+  partners = NULL)
 }
 \arguments{
 \item{d_focal}{data frame of focal observations.

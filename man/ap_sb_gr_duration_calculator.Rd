@@ -4,7 +4,8 @@
 \alias{ap_sb_gr_duration_calculator}
 \title{Calculate the duration of a behaviour with a partner.}
 \usage{
-ap_sb_gr_duration_calculator(d_focal, start_codes, end_codes, focals, partners)
+ap_sb_gr_duration_calculator(d_focal, start_codes, end_codes, focals,
+  partners)
 }
 \arguments{
 \item{d_focal}{data frame of focal observations.
