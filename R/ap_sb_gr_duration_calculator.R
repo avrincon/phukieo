@@ -41,8 +41,8 @@ ap_sb_gr_duration_calculator <- function(d_focal,
                  (action %in% c(start_codes, end_codes)) &
                  (receiver %in% c(d.f, d.p))) %>%
         select("date", "protocol_start_time", "focal_animal", "observer",
-               "action_time", "actor", "action", "receiver", "action_partner",
-               "at_sec_since_mdn")
+              "group", "action_time", "actor", "action", "receiver",
+               "modifier1", "modifier2", "action_partner", "at_sec_since_mdn")
 
       if(nrow(dyad.info) > 0 & nrow(dyad.info) %% 2 != 0){
         # error message when dyad does not have equal number of start and end codes

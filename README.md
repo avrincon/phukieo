@@ -35,7 +35,7 @@ Functions that are useful to calculate da/pa interaction chunks
 - map_nest()
 
 ### classify da_pa_ids
-- classify_da_id()
-_helper functions:_
+- classify_da_id()  
+_helper functions:_  
 - class_da_id()
 - class_agg_action_intensity()
