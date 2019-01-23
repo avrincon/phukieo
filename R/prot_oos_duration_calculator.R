@@ -5,8 +5,7 @@
 #'
 #' @param d_focal frame of focal observations.
 #' Currently needs all these columns with exact same names:
-#' "date", "protocol_start_time", "focal_animal", "observer", "action_time",
-#' "actor", "action","at_sec_since_mdn"
+#' "date", "protocol_start_time", "focal_animal", "observer", "group", "action_tme", "actor", "action", "modifier_1", "modifier_2","at_sec_since_mdn"
 #' @inheritParams ap_sb_gr_duration_calculator
 #'
 #' @return adds two columns to d_focal. One with the total duration in seconds
@@ -32,7 +31,8 @@ prot_oos_duration_calculator <- function(d_focal,
                (actor == d.f) &
                (action %in% c(start_codes, end_codes))) %>%
       select("date", "protocol_start_time", "focal_animal", "observer",
-             "group", "action_time", "actor", "action","at_sec_since_mdn")
+             "group", "action_time", "actor", "action", "modifier_1",
+             "modifier_2","at_sec_since_mdn")
 
     if(nrow(dyad.info) > 0 & nrow(dyad.info) %% 2 != 0){
       # error message when dyad does not have equal number of start and end codes

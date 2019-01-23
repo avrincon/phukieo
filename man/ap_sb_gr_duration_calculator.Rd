@@ -10,8 +10,7 @@ ap_sb_gr_duration_calculator(d_focal, start_codes, end_codes, focals,
 \arguments{
 \item{d_focal}{data frame of focal observations.
 Currently needs all these columns with exact same names:
-"date", "protocol_start_time", "focal_animal", "observer", "action_time",
-"actor", "action", "receiver", "action_partner", "at_sec_since_mdn"}
+"date", "protocol_start_time", "focal_animal", "observer", "group", "action_time", "actor", "action", "receiver", "modifier_1", "modifier_2", "action_partner", "at_sec_since_mdn"}
 
 \item{start_codes}{a character vector of action codes
 that indicate when a behaviour starts.}

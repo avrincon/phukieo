@@ -9,8 +9,7 @@ prot_oos_duration_calculator(d_focal, start_codes, end_codes, focals)
 \arguments{
 \item{d_focal}{frame of focal observations.
 Currently needs all these columns with exact same names:
-"date", "protocol_start_time", "focal_animal", "observer", "action_time",
-"actor", "action","at_sec_since_mdn"}
+"date", "protocol_start_time", "focal_animal", "observer", "group", "action_tme", "actor", "action", "modifier_1", "modifier_2","at_sec_since_mdn"}
 
 \item{start_codes}{a character vector of action codes
 that indicate when a behaviour starts.}

@@ -5,9 +5,7 @@
 #'
 #' @param d_focal data frame of focal observations.
 #' Currently needs all these columns with exact same names:
-#' "date", "protocol_start_time", "focal_animal", "observer", "action_time",
-#' "actor", "action", "receiver", "action_partner", "at_sec_since_mdn"
-#'
+#' "date", "protocol_start_time", "focal_animal", "observer", "group", "action_time", "actor", "action", "receiver", "modifier_1", "modifier_2", "action_partner", "at_sec_since_mdn"
 #' @param start_codes a character vector of action codes
 #' that indicate when a behaviour starts.
 #' @param end_codes a character vector of action codes
@@ -42,7 +40,7 @@ ap_sb_gr_duration_calculator <- function(d_focal,
                  (receiver %in% c(d.f, d.p))) %>%
         select("date", "protocol_start_time", "focal_animal", "observer",
               "group", "action_time", "actor", "action", "receiver",
-               "modifier1", "modifier2", "action_partner", "at_sec_since_mdn")
+               "modifier_1", "modifier_2", "action_partner", "at_sec_since_mdn")
 
       if(nrow(dyad.info) > 0 & nrow(dyad.info) %% 2 != 0){
         # error message when dyad does not have equal number of start and end codes
