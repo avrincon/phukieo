@@ -25,6 +25,7 @@ map_nest <- function(x, ..., f) {
     tidyr::nest() %>%
     # map function to list column
     dplyr::mutate(new_data = purrr::map(data, (!!f))) %>%
+    select(-data) %>%
     # unnest new data
-    tidyr::unnest(new_data)
+    tidyr::unnest(cols = c(new_data))
 }
